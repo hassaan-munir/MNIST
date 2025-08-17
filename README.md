@@ -81,7 +81,7 @@ Pull requests are welcome. For major changes, please open an issue first.
 
 ## Contact Me
 
-Connect with me on LinkedIn: [Muhammad Hassaan Munir]((https://www.linkedin.com/in/muhammad-hassaan-munir-79b5b2327/))
+Connect with me on LinkedIn: [Muhammad Hassaan Munir](https://www.linkedin.com/in/muhammad-hassaan-munir-79b5b2327/)
 
 ## License
 
@@ -89,4 +89,4 @@ MIT License
 
 ## Live Demo
 
- Click [Here]((https://mnist-digit-recognitions.streamlit.app/))
+ Click [Here](https://mnist-digit-recognitions.streamlit.app/)
