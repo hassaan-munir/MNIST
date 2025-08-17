@@ -1,39 +1,52 @@
-
 # MNIST Digit Recognition Project
 
 ![MNIST Sample](https://upload.wikimedia.org/wikipedia/commons/2/27/MnistExamples.png)
 
-A complete implementation of a CNN model to recognize handwritten digits (0-9) from the MNIST dataset, with a user-friendly Streamlit web interface.
+A complete implementation of a Convolutional Neural Network (CNN) to recognize handwritten digits (0-9) from the MNIST dataset, with a simple Streamlit web interface.
 
 ## Features
 
-- **98.25% Test Accuracy** on MNIST dataset
-- **Streamlit Web App** for real-time predictions
-- **Preprocessing Pipeline**: Automatic image normalization and resizing
-- **Model Architecture**: 
-  - 2 Convolutional Layers + MaxPooling
-  - 2 Dense Layers with Dropout
-- **Easy Deployment**: Ready-to-use with minimal dependencies
+* **98.25% Test Accuracy** on MNIST dataset
+* **Interactive Streamlit Web App** for real-time predictions
+* **Automatic Preprocessing**: image normalization and resizing
+* **CNN Architecture**: 2 Convolutional Layers with MaxPooling, 2 Dense Layers with Dropout
+* **Easy Deployment** with minimal dependencies
 
 ## Installation
 
 1. Clone the repository:
-```bash
+
+```
 git clone https://github.com/yourusername/mnist-digit-recognition.git
 cd mnist-digit-recognition
-Install dependencies:
+```
 
-bash
+2. Install dependencies:
+
+```
 pip install -r requirements.txt
- Usage
-Running the Web App:
-bash
+```
+
+## Usage
+
+Run the web app:
+
+```
 streamlit run app.py
-Training the Model:
-bash
+```
+
+Train the model:
+
+```
 python train_model.py
- Model Architecture
-python
+```
+
+## Model Architecture
+
+```
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Conv2D, MaxPooling2D, Flatten, Dense, Dropout
+
 model = Sequential([
     Conv2D(32, (3,3), activation='relu', input_shape=(28,28,1)),
     MaxPooling2D((2,2)),
@@ -43,39 +56,37 @@ model = Sequential([
     Dense(100, activation='relu'),
     Dense(10, activation='softmax')
 ])
- Project Structure
-text
+```
+
+## Project Structure
+
+```
 .
 ├── app.py                # Streamlit web application
 ├── train_model.py        # Model training script
 ├── mnist_cnn_model.h5    # Pretrained model
 ├── requirements.txt      # Dependencies
-└── README.md            # This file
- Future Improvements
-Add multi-digit recognition capability
+└── README.md             # This file
+```
 
-Implement drawing canvas in the web app
+## Future Improvements
 
-Deploy as a REST API
+* Multi-digit recognition
+* Drawing canvas in web app
+* Deploy as a REST API
 
- Contributing
-Pull requests are welcome! For major changes, please open an issue first.
+## Contributing
 
- License
-MIT
+Pull requests are welcome. For major changes, please open an issue first.
 
-text
+## Contact Me
 
-### Key Highlights:
-1. **Visual Appeal**: Added MNIST sample image at top
-2. **Clear Structure**: Separated into logical sections
-3. **Code Formatting**: Proper Markdown code blocks
-4. **Future Scope**: Mentioned possible improvements
-5. **Professional Touch**: Added license and contribution guidelines
+Connect with me on LinkedIn: [Muhammad Hassaan Munir]((https://www.linkedin.com/in/muhammad-hassaan-munir-79b5b2327/))
 
-You can copy-paste this directly into your README.md file. For better presentation:
-- Add screenshots of your web app in an `/images` folder
-- Include a demo GIF if possible
-- Add badges for Python version, TensorFlow, etc.
+## License
 
-Would you like me to add any specific details about your implementation or modify any section? 😊
+MIT License
+
+## Live Demo
+
+ Click [Here]((https://mnist-digit-recognitions.streamlit.app/))
